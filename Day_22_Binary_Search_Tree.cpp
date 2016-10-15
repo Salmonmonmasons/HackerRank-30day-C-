@@ -35,23 +35,24 @@ class Solution{
                return root;
            }
         }
-    int getHeight(Node* root)
-    {
-        int heightLeft = 0;
-        int heightRight = 0;
+      int getHeight(Node* root)
+      {
+          int heightLeft = 0;
+          int heightRight = 0;
 
-        //Write your code here
+          //Write your code here
 
-        if(root->left!=NULL)
-        {
-            heightLeft = getHeight(root->left)+1;
-        }
-        if(root->right!=NULL)
-        {
-            heightRight = getHeight(root->right)+1;
-        }
-        return (heightLeft > heightRight ? heightLeft : heightRight);
-    }:
+          if(root->left!=NULL)
+          {
+              heightLeft = getHeight(root->left)+1;
+          }
+          if(root->right!=NULL)
+          {
+              heightRight = getHeight(root->right)+1;
+          }
+          return (heightLeft > heightRight ? heightLeft : heightRight);
+      }
+    }; //End of Solution
 
 
 
